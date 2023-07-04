@@ -1,0 +1,2 @@
+# Praca
+Statyczny szablon
