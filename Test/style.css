@@ -43,39 +43,37 @@ header
     padding: 1%;
     padding-top: 3%;
     display: flex;
-    align-items: baseline;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
 }
 .header_logo
 {
-    float: left;
     width: 10%;
 }
 .header_product
 {
     width: 10%;
     position: relative;
-    display: inline-block;
     text-align: center;
-    margin-left: 5%;
-    margin-top: 0.25%;
 }
 .header_pricing
 {
     width: 10%;
     position: relative;
-    display: inline-block;
     text-align: center;
 }
 .header_pricing a
 {
     color: #fff;
     text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
 }
 .header_learn
 {
     width: 10%;
     position: relative;
-    display: inline-block;
     text-align: center;
 }
 .header_login
@@ -83,15 +81,14 @@ header
     width: 20%;
     position: relative;
     text-align: center;
-    margin-left: 15%;
-    float: right;
-    right: -30%;
+    margin-right: -30%; 
 }
 .header_login a
 {
-    float: left;
     color: #fff;
     text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
 }
 .login_img
 {
@@ -158,11 +155,22 @@ header
 }
 article
 {
-    max-width: 60%;
-    height: 80%;    
-    position: relative;
-    display: inline-block;
-    margin: 0 auto;
+    height: 60%;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+.article_text
+{
+    height: auto;
+    width: 50%;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
 }
 h1.article_title
 {
@@ -185,27 +193,11 @@ h1.article_title
     text-decoration: none;
     font-weight: bold;
 }
-.article_ilu
-{
-    max-width: 40%;
-    height: auto;
-    padding: 2%;
-    position: relative;
-    display: flex;
-    margin: 0 auto;
-    justify-content: flex-end;
-    float: right;
-}
-.ilu-img
-{
-    max-width: 100vw;
-    height: auto;
-}
 footer
 {
-    min-height: 40%;
+    height: 20%;
     position: relative;
-    display: inline-block;
+    display: inline-flex;
 }
 .footer_logo
 {
@@ -217,32 +209,36 @@ footer
 {
     margin-top: 10%;
     position: relative;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
 }
 .benefit-1
 {
-    max-width: 30%;
-    float: left;
-    margin-left: 10%;
-    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .benefit-2
 {
-    max-width: 30%;
-    float: right;
-    margin: 0 auto;
-    margin-top: 40%;
-    margin-right: -25%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.benefit-2_text
+{
+    order: 2;
 }
 .benefit-3
 {
-    margin-top: 13%;
-    max-width: 30%;
-    float: left;
-    margin: 0 auto;
-    position: relative;
-    left: -20%;
-    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .benefit_button
 {
@@ -265,59 +261,15 @@ footer
     font-weight: bold;
     color: #000;
 }
-.benefit-1_img
-{
-    max-width: 30%;
-    height: auto;
-    padding: 2%;
-    float: right;
-    margin: 0 auto;
-    margin-right: 10%;
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -3%;
-}
-.benefit-2_img
-{
-    max-width: 40%;
-    height: auto;
-    padding: 2%;
-    float: left;
-    margin: 0 auto;
-    margin-left: 10%;
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 10%;
-    margin-left: -10%;
-}
-.benefit-3_img
-{
-    max-width: 35%;
-    height: auto;
-    padding: 2%;
-    float: right;
-    margin: 0 auto;
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 5%;
-    
-}
-.benefit_img
-{
-    max-width: 180%;
-    height: auto;
-}
 .quote
 {
     margin-top: 10%;
     width: 100%;
-    height: 50%;
+    height: auto;
     position: relative;
     padding-top: 5%;
     font-size: 25px;
+    margin-bottom: 10%;
     background-image: url("img/quote.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -445,8 +397,9 @@ h1.hosting_title
 {
     width: 80%;
     height: 15%;
-    position: relative;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 5%;
     margin-left: 10%;
 }
@@ -455,12 +408,6 @@ h1.newsletter_title
     font-size: 50px;
     font-weight: bold;
     color: #fff;
-    float: left;
-}
-.newsletter_form
-{
-    float: right;
-    margin-top: 3%;
 }
 .newsletter_input
 {
@@ -469,7 +416,7 @@ h1.newsletter_title
     height: 4vh;
     width: 13vw;
     border-radius: 6px;
-    margin-top: 2%;
+    
 }
 .newsletter_button
 {
@@ -485,6 +432,7 @@ h1.newsletter_title
     width: 80%;
     height: 30%;
     display: flex;
+    justify-content: space-between;
     position: relative;
     margin-left: 10%;
     margin-top: 2%;
@@ -497,7 +445,6 @@ h4.navbar_title
 {
     width: 18%;
     height: 10%;
-    display: inline-block;
 }
 .navbar_box a
 {
@@ -508,7 +455,6 @@ h4.navbar_title
 {
     width: 20%;
     height: 30%;
-    display: inline-block;
 }
 .navbar_box2 a
 {
@@ -519,7 +465,6 @@ h4.navbar_title
 {
     width: 20%;
     height: 30%;
-    display: inline-block;
     margin-top: 5%;
 }
 .navbar_box3 a
@@ -531,7 +476,6 @@ h4.navbar_title
 {
     width: 18%;
     height: 10%;
-    display: inline-block;
 }
 .navbar_box4 a
 {
@@ -544,14 +488,13 @@ h4.navbar_title
 }
 .container3_line
 {
-    width:80vw;
+    width:80%;
 }
 .container3_footer
 {
     height: 10%;
     width: 80%;
     margin: 0 auto;
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -559,19 +502,16 @@ h4.navbar_title
 }
 .footer_logo2
 {
+    width: 10%;
+    height: 3%;
+    align-items: center;
     margin-top: 1%;
-    width: 8%;
-    height: 30%;
-}
-.footer_text
-{
-    text-align: center;
-    display: flex;
 }
 .footer_social
 {
     display: flex;
-  
+    width: 15%;
+    height: 3%;
 }
 .helpcenter_container
 {
@@ -589,57 +529,51 @@ h4.navbar_title
 .helpcenter_header
 {
     height: 5%;
-    width: 80%;
+    min-width: 80%;
     font-size: 15px;
     font-weight: bold;
     padding: 1%;
     padding-top: 3%;
     display: flex;
-    justify-content: first baseline;
-    align-items: baseline;
+    justify-content: flex-end;
+    
 }
 .header_logo-black
 {
-    float: left;
-    /* margin-top: 1%; */
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
 }
 .helpcenter_product
 {
     width: 10%;
-    position: relative;
-    display: inline-block;
     text-align: center;
     margin-left: 5%;
 }
 .helpcenter_pricing
 {
     width: 10%;
-    position: relative;
-    display: inline-block;
     text-align: center;
 }
 .helpcenter_pricing a
 {
     color: #000;
     text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
 }
 .helpcenter_learn
 {
     width: 10%;
-    position: relative;
-    display: inline-block;
     text-align: center;
-    /* margin-top: -15%; */
 }
 .helpcenter_login
 {
     margin: 0 auto;
     width: 30%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: baseline; 
-    position: relative;
-    float: right;
+    display: inline-flex;
+    margin-left: 35%;
 }
 .helpcenter_login a
 {
@@ -651,14 +585,15 @@ h4.navbar_title
     width: 10%;
     height: 4vh;
     margin: 0 auto;
-    float: left;
-    position: relative;
+    font-size: 15px;
+    font-weight: bold;
 }
 .helpcenter_button
 {
     background-color: transparent;
     color: #000;
     border: none;
+    font-size: 15px;
     font-weight: bold;
 }
 .header_dropdown
@@ -699,10 +634,8 @@ h4.navbar_title
     color: #fff;
     border-radius: 6px;
     border: none;
-    height: 4vh;
+    height: auto;
     font-size: 15px;
-    float: right;
-    align-self: flex-end;
 }
 .helpcenter_search
 {
@@ -858,34 +791,219 @@ span.faq_title
     margin-top: -1%;
     margin-bottom: 5%;
 }
-.hosting_button
-{
-    width: 25%
-}
-.hosting
-{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10%;
-}
-@media screen and (max-width: 1024px) {
-    .container
-    {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .box
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    .header_product
+.header_menu
     {
         visibility: hidden;
         display: none;
+    }
+@media screen and (max-width: 1024px) {
+    .container
+    {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        height: 1400px;
+        flex-direction: column;
+        align-items: center;
+        background-image: (url(img/bgh.png));
+    }
+    .box
+    {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header
+    {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: -10%;    
+    }
+    article 
+    {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .article_ilu
+    {
+        width: 100%;
+        order: 1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .article_text
+    {
+        width: 100%;
+        order: 2;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    h1.article_title
+    {
+        font-size: 25px;
+    }
+    .ilu_img
+    {
+        width: 110%;
+    }
+    footer
+    {
+        width: 200%;
+        height: auto;
+        display: flex;
+        margin-top: 30%;
+        margin-left: 100%;
+    }
+    .footer_logo
+    {
+        width: 200%;
+    }
+    .container2
+    {
+        width: 90%;
+        margin-top: -100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .benefit-1
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20%;
+    }
+    .benefit_img
+    {
+        width: 100%;
+    }
+    .benefit-1_text
+    {
+        order: 2;
+        text-align: center;
+    }
+    .benefit-2
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20%;
+    }
+    .benefit_img
+    {
+        width: 100%;
+    }
+    .benefit-2_text
+    {
+        order: 2;
+        text-align: center;
+    }
+    .benefit-3
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20%;
+    }
+    .benefit_img
+    {
+        width: 100%;
+    }
+    .benefit-3_text
+    {
+        order: 2;
+        text-align: center;
+    }
+    .quote
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/testimonials.png);
+        margin-bottom: 100%;
+    }
+    .quote_img
+    {
+        width: 350%;
+        order: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .quote_text
+    {
+        width: 90%;
+        text-align: center;
+        order: 2;
+        font-size: 18px;
+    }
+    .quote_img-2
+    {
+        width: 150%;
+        order: 3;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .quote_img-3
+    { 
+        display: none;
+    }
+    .learn
+    {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h1.learn_title
+    {
+        font-size: 30px;
+    }
+    .learn_box
+    {
+        width: 100%;
+        margin-bottom: 10%;
+        padding: 5%;
+    }
+    .helpcenter_container
+    {
+        background-color: linear-gradient(#DBD6D8, #FFF);
+    }
+    .helpcenter_header
+    {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: -10%;
+    }
+    
+    .header_product
+    {
+        visibility: hidden;
+        display: visible;
     }
     .header_pricing
     {
@@ -901,11 +1019,6 @@ span.faq_title
     {
         visibility: hidden;
         display: none;
-    }
-    .header_logo
-    {
-        width: 50%;
-        margin: 5%;
     }
     .helpcenter_product
     {
@@ -942,6 +1055,11 @@ span.faq_title
     {
         width: 20%;
     }
+    .newsletter
+    {
+        display: flex;
+        flex-direction: column;
+    }
     h1.newsletter_title
     {
         font-size: 35px;
@@ -949,7 +1067,7 @@ span.faq_title
     }
     .newsletter_form
     {
-        width: 70vw;
+        width: 100%;
         height: auto;
         justify-content: center;
     }
@@ -959,7 +1077,7 @@ span.faq_title
     }
     .newsletter_button
     {
-        width: 25%;
+        width: 30%;
     }
     .navbar
     {
@@ -994,8 +1112,32 @@ span.faq_title
     }
     .container3_footer
     {
+        width: 60%;
         display: flex;
-        justify-content: center;
+        justify-content: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer_social
+    {
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+    .footer_text
+    {
+        align-items: center;
+    }
+    .helpcenter_search-title
+    {
+        width: 90%;
+    }
+    .helpcenter_result
+    {
+        width: 90%;
+        margin-top: 10%;
+        margin-bottom: 20%;
     }
     .helpcenter_result-title
     {
@@ -1091,12 +1233,153 @@ span.faq_title
     }
     h1.hosting_title
     {
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
         font-size: 25px;
         margin-bottom: 10%;
     }
     .hosting_button
     {
-        width: 100%;
+        width: auto;
+        height: auto;
     }
+    .header_menu
+    {
+        width: 5%;
+        height: auto;
+        visibility: visible;
+        display: flex;
+        margin-top: -3.5%;
+    }
+    /* .mobile_menu
+    {
+        width: 95%;
+        min-height: auto;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 0px 100px 0px rgba(0,0,0,0.75);
+    } */
+    /* .mobile_menu-header
+    {
+        width: 95%;
+        height: auto;
+        display: flex;
+        justify-content: space-between; 
+        margin-top: 5%;
+    }
+    .header_menu-exit
+    {
+        width: 5%;
+        height: auto;
+        visibility: visible;
+        display: flex;
+        margin-right: 5%;
+    }
+    .mobile_menu-title
+    {
+        font-size: 25px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .menu 
+    {
+        width: 95%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+    }
+    .menu_box
+    {
+        height: 5%;
+        min-width: 100%;
+        display: flex;
+        padding: 5%;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 0.5px solid;
+        background-color: #1AC3DA;
+        border-radius: 10px;
+    }
+    .menu_box2
+    {
+        height: 5%;
+        min-width: 100%;
+        display: flex;
+        padding: 5%;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 0.5px solid;
+        background-color: #1AC3DA;
+        border-radius: 10px;
+    }
+    .menu_box a 
+    {
+        text-decoration: none;
+        color: black;
+    }
+    .menu_box2 a
+    {
+        text-decoration: none;
+        color: black;
+    }
+    .login
+    {
+        width: 95%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        margin: 5%;
+        margin-top: 90%;
+    }
+    .login_buttons
+    {
+        width: 100%;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 5%;
+        border: 1px solid gray;
+    }
+    .login_buttons-red
+    {
+        margin-top: 1%;
+        width: 100%;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 5%;
+        border: 1px solid gray;
+        background-color: red;
+        color: white;
+    }
+    .menu_dropdown
+    {
+        display: none;
+    }
+    .menu_box2:hover .menu_dropdown
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 100%;
+        height: auto;
+        background-color: #1AC3DA;
+        border-radius: 10px;
+    } */
 }
