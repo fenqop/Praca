@@ -30,9 +30,8 @@ body
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    height: auto;
     color: #fff;
-
+    min-height: 100vh;
 }
 header
 {
@@ -111,6 +110,7 @@ header
     color: #fff;
     border: none;
     font-weight: bold;
+    font-size: 15px;
 }
 .header_dropdown
 {
@@ -163,6 +163,12 @@ article
     justify-content: space-between;
     align-items: center;
     font-size: 15px;
+    margin-top: -5%;
+}
+.article_ilu
+{
+    width: 50%;
+    padding-top: 10%;
 }
 .article_text
 {
@@ -195,15 +201,13 @@ h1.article_title
 }
 footer
 {
-    height: 20%;
     position: relative;
     display: inline-flex;
+    min-height: 10vh;
 }
 .footer_logo
 {
-    margin-top: 10%;
     min-width: 125%;
-    height: auto;
 }
 .benefits
 {
@@ -217,14 +221,14 @@ footer
 }
 .benefit-1
 {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .benefit-2
 {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -235,7 +239,7 @@ footer
 }
 .benefit-3
 {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -728,9 +732,13 @@ h1.helpcenter_opinion-title
 .helpcenter_result-buttons
 {
     width: 80%;
-    margin: 0 auto;
-    padding: 5px;
-    margin-left: 43%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.button_yes
+{
+    margin-left: 350%;
 }
 .button_line
 {
@@ -743,10 +751,9 @@ h1.helpcenter_opinion-title
     margin: 0 auto;
     margin-top: 5%;
     margin-bottom: 5%;
-}
-.helpcenter_next-img
-{
-    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .helpcenter_result-title
 {
@@ -803,7 +810,7 @@ span.faq_title
         margin: 0;
         width: 100%;
         display: flex;
-        height: 1400px;
+        min-height: 160vh;
         flex-direction: column;
         align-items: center;
         background-image: (url(img/bgh.png));
@@ -822,8 +829,7 @@ span.faq_title
         width: 90%;
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: -10%;    
+        align-items: flex-start;   
     }
     article 
     {
@@ -865,10 +871,12 @@ span.faq_title
         display: flex;
         margin-top: 30%;
         margin-left: 100%;
+        /* background-image: url(img/logosm.png); */
     }
     .footer_logo
     {
-        width: 200%;
+        height: 100%;
+        width: 80vw;
     }
     .container2
     {
@@ -935,6 +943,8 @@ span.faq_title
     }
     .quote
     {
+        width: 100%;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -944,26 +954,24 @@ span.faq_title
     }
     .quote_img
     {
-        width: 350%;
+        max-width: 50%;
         order: 1;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        margin-top: -15%;
+        margin-bottom: 15%;    
     }
     .quote_text
     {
-        width: 90%;
+        width: 80%;
+        height: auto;
         text-align: center;
         order: 2;
         font-size: 18px;
     }
     .quote_img-2
     {
-        width: 150%;
+        max-width: 50%;
         order: 3;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        margin-left: -1%;
     }
     .quote_img-3
     { 
@@ -1171,10 +1179,11 @@ span.faq_title
     }
     .helpcenter_nextprev
     {
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
     .helpcenter_prev-img
@@ -1185,7 +1194,6 @@ span.faq_title
         height: 64px;
         padding-left: 64px;
         display: flex;
-        order: -1;
     }
     .helpcenter_next-img
     {
@@ -1199,17 +1207,29 @@ span.faq_title
     .nextprev_text
     {
         visibility: visible;
+        width: 64px;
+        height: auto;
         display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        
+        margin-right: -5%;
+        order: 2;
     }
     .nextprev_text2
     {
         visibility: visible;
+        width: 64px;
+        height: auto;
         display: flex;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: -9%;
+        order: 3;
+    }
+    .nextprev_img
+    {
+        order: 1;
+    }
+    .nextprev_img2
+    {
+        order: 4;
     }
     .faq_help
     {
@@ -1252,11 +1272,15 @@ span.faq_title
         display: flex;
         margin-top: -3.5%;
     }
-    /* .mobile_menu
+    .button_yes
+    {
+        margin: auto;
+    }
+    .mobile_menu
     {
         width: 95%;
         min-height: auto;
-        display: none;
+        display: flex;
         margin-left: auto;
         margin-right: auto;
         background-color: white;
@@ -1264,8 +1288,8 @@ span.faq_title
         justify-content: center;
         align-items: center;
         box-shadow: 5px 0px 100px 0px rgba(0,0,0,0.75);
-    } */
-    /* .mobile_menu-header
+    }
+    .mobile_menu-header
     {
         width: 95%;
         height: auto;
@@ -1381,5 +1405,5 @@ span.faq_title
         height: auto;
         background-color: #1AC3DA;
         border-radius: 10px;
-    } */
+    }
 }
