@@ -798,11 +798,15 @@ span.faq_title
     margin-top: -1%;
     margin-bottom: 5%;
 }
-.header_menu
-    {
-        visibility: hidden;
-        display: none;
-    }
+.mobile_menu input[type="checkbox"],
+.mobile_menu label 
+{
+    display: none;
+}
+.mobile_menu
+{
+    display: none;
+}
 @media screen and (max-width: 1024px) {
     .container
     {
@@ -810,7 +814,7 @@ span.faq_title
         margin: 0;
         width: 100%;
         display: flex;
-        min-height: 160vh;
+        min-height: 200vh;
         flex-direction: column;
         align-items: center;
         background-image: (url(img/bgh.png));
@@ -1276,134 +1280,86 @@ span.faq_title
     {
         margin: auto;
     }
-    .mobile_menu
-    {
-        width: 95%;
-        min-height: auto;
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: white;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 5px 0px 100px 0px rgba(0,0,0,0.75);
-    }
-    .mobile_menu-header
-    {
-        width: 95%;
-        height: auto;
-        display: flex;
-        justify-content: space-between; 
-        margin-top: 5%;
-    }
-    .header_menu-exit
-    {
-        width: 5%;
-        height: auto;
-        visibility: visible;
-        display: flex;
-        margin-right: 5%;
-    }
-    .mobile_menu-title
-    {
-        font-size: 25px;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .menu 
-    {
-        width: 95%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        margin: 5%;
-    }
-    .menu_box
-    {
-        height: 5%;
-        min-width: 100%;
-        display: flex;
-        padding: 5%;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 0.5px solid;
-        background-color: #1AC3DA;
-        border-radius: 10px;
-    }
-    .menu_box2
-    {
-        height: 5%;
-        min-width: 100%;
-        display: flex;
-        padding: 5%;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 0.5px solid;
-        background-color: #1AC3DA;
-        border-radius: 10px;
-    }
-    .menu_box a 
-    {
-        text-decoration: none;
-        color: black;
-    }
-    .menu_box2 a
-    {
-        text-decoration: none;
-        color: black;
-    }
-    .login
-    {
-        width: 95%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        text-align: center;
-        align-items: center;
-        margin: 5%;
-        margin-top: 90%;
-    }
-    .login_buttons
-    {
-        width: 100%;
-        border-radius: 10px;
-        font-weight: bold;
-        font-size: 15px;
-        padding: 5%;
-        border: 1px solid gray;
-    }
-    .login_buttons-red
-    {
-        margin-top: 1%;
-        width: 100%;
-        border-radius: 10px;
-        font-weight: bold;
-        font-size: 15px;
-        padding: 5%;
-        border: 1px solid gray;
-        background-color: red;
-        color: white;
-    }
-    .menu_dropdown
+    .header_logo-black
     {
         display: none;
     }
-    .menu_box2:hover .menu_dropdown
+    input[type="checkbox"]:not(:checked) + ul 
     {
+        display: none;
+    }
+    .mobile_menu 
+    {
+        width: 90%;
+        background-color: #fff;
+        color: black;
+        font-weight: bold;
+        font-size: 15px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5%;
-        margin-bottom: 5%;
+        justify-content: space-between;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-radius: 5%;
+        padding: 5%;
+        
+    }
+    .mobile_menu ul 
+    {
+        list-style-type: none;
+    }
+
+    .mobile_menu ul li 
+    {
+        display: inline-flex;
+    }
+    .mobile_menu 
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .mobile_menu a
+    {
+        text-decoration: none;
+        color: #000;
+        margin-left: 1%;
+    }
+    .mobile_menu label 
+    {
+        display: block;
+        align-self: center;
+    }
+    .mobile_menu ul 
+    {
+        display: block;
+    }
+    .mobile_menu ul:last-child 
+    {
         width: 100%;
-        height: auto;
-        background-color: #1AC3DA;
-        border-radius: 10px;
+        flex-basis: 100%;
+    }
+    .mobile_menu ul li 
+    {
+        margin-bottom: 0;
+        width: 100%;
+        text-align: right;
+        padding: 5%;
+        border-bottom: 1px solid #ddd;
+        margin-left: -10%;
+    }
+    .menu_login
+    {
+        margin-top: 40%;
+        margin-left: -20%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .menu_login-red
+    {
+        background-color: red;
+        border-radius: 5%;
+        color: white;
     }
 }
